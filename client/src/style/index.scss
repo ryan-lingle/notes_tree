@@ -1,0 +1,180 @@
+$primary: black;
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+#header {
+  display: flex;
+  background: black;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 200;
+  padding: 10px 0px;
+  div {
+    font-size: 20px;
+    text-align: center;
+  }
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#current {
+  flex-grow: 1;
+}
+
+#parents {
+  padding-left: 0px;
+  .icon {
+    border-right: 2px solid white;
+    width: 100%;
+  }
+}
+
+#children {
+  padding-right: 0px;
+  .icon {
+    border-left: 2px solid white;
+    width: 100%;
+  }
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 55px !important;
+  font-family: 'Lora', serif;
+  margin: 15px 0px !important;
+}
+
+#title-edit {
+  font-weight: 100;
+  font-size: 55px !important;
+  font-family: 'Lora', serif;
+  margin: 15px 0px !important;
+  border: none;
+}
+
+#title-edit:focus {
+  outline: none;
+}
+
+h2 {
+  font-size: 30px !important;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px !important;
+  margin-bottom: 7px !important;
+}
+
+div {
+  font-size: 20px;
+  font-family: 'Lora', serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  line-height: 35px;
+}
+
+blockquote {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 35px;
+}
+
+.ql-container {
+  border: none !important;
+  overflow-x: scroll;
+
+  img {
+    display: block;
+    margin: auto;
+    margin: 25px 0px;
+  }
+}
+
+.ql-editor ul > li {
+  line-height: 35px;
+}
+
+.ql-editor ul > li::before {
+    content: '\2015';
+}
+
+.ql-editor {
+  padding: 15px 0px !important;
+}
+
+.ql-toolbar {
+  position: -webkit-sticky;
+  position: sticky !important;
+  top: 50px;
+  background: white;
+  z-index: 100;
+}
+
+#editor {
+  margin: 50px 0px;
+  padding: 0px 50px;
+}
+
+.branch-list {
+  text-align: center;
+  overflow-x: scroll;
+  position: sticky;
+  top: 50px;
+}
+
+.branch-card {
+  display: block;
+  height: 100px;
+  width: 100%;
+  padding-top: 30px;
+  background-size: cover;
+
+  position: relative;
+  overflow: hidden;
+  margin: 5px 0px;
+  margin-right: 10px;
+  background: white;
+
+  div {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    filter: brightness(80%);
+  }
+}
+
+.branch-card:hover {
+  text-decoration: none;
+  img {
+    filter: brightness(70%);
+  }
+}
+
+#save-button {
+  font-size: 13px;
+}
+
+#title-image {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+// #image-input {
+//   display: none;
+// }
